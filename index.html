@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Instant Feast</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--index css-->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <!--body start-->
+  <body> 
+    <div class="wholepage">
+      <!--nav bar start-->
+      <nav>
+        <div class = "nav-wraper red">
+
+          <a href="index.html" class="brand-logo center"><b class = "logo">INSTANT FEAST</b></a>
+          
+          <a href="#" data-target="menu-responsive" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+          
+          <ul class ="right">
+            
+            <li><a href="signin.html">Sign-in</a></li>
+            
+            <li>
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </li>
+            
+            <li class="cart-number"><a href="https://end-product.ttfeast.repl.co/cart.html"><i class = "Small material-icons the-cart">local_grocery_store<!--add_shopping_cart--></i> <span class=" badge shopping update-badge">0</span></a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <ul class="sidenav" id="menu-responsive">
+          <li><a href="list.html">Resturant</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Offers</a></li>
+        </ul>
+
+        <!--nav bar end-->
+
+      <!--quick nav-->
+      <div class="quick">
+         
+         <ul class = "quicknav">
+
+                <li class="quickie"><a href = "https://end-product.ttfeast.repl.co/ChineseTemple.html"><img class ="type" src = "https://dcassetcdn.com/design_img/573834/206746/206746_3789430_573834_image.jpg"><button class="quickbtn"><b class="name">chinese</b></a></li>
+                
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/CafeCup.html"><img class ="type" src = "https://www.seekpng.com/png/detail/79-792947_baskota-group-green-green-tea-logo-png.png"><button class="quickbtn"><b class="name">Coffee</b></a></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href = "https://end-product.ttfeast.repl.co/GrillHouse.html"><img class = "type" src = "https://png.pngtree.com/png-vector/20191029/ourlarge/pngtree-barbecue-grill-line-icon-vector-png-image_1915841.jpg"><button class="quickbtn"><b class="name">BBQ</b></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/Pizzaplaza.html">
+                  <img class ="type" src = "https://image.freepik.com/free-vector/pizza-logo-design-template_15146-192.jpg"><button class="quickbtn"><b class="name">pizza</b></li>
+                
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/ChickenPlace.html">
+                  <img class ="type" src = "https://media.istockphoto.com/vectors/fried-crispy-chicken-leg-cartoon-fast-food-drumsticks-vector-vector-id1208598249?b=1&k=6&m=1208598249&s=612x612&w=0&h=6PJJiW4zbMhiRJEsZy1cYMVQUtG340Dz1kC2kgp7IaU="><button class="quickbtn"><b class="name">chicken</b></a></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/CuisineTown.html"><img class ="type" src = "https://pbs.twimg.com/profile_images/300248172/fork_knife_logo_400x400.jpg"><b class = "name">Cuisine</b></a></li>
+                
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/SushiBar.html"><img class ="type" src = "https://www.nicepng.com/png/detail/307-3078997_some-things-on-the-horizon-for-sushi-sushi.png"><button class="quickbtn"><b class="name">sushi</b></a></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/BurgerBarn.html"><img class ="type" src = "https://media.istockphoto.com/vectors/hamburger-icon-vector-id1038355632?b=1&k=6&m=1038355632&s=612x612&w=0&h=NrItWXBTjT-aVIVpiizqw4i-0bUgEAohvb-K9otXlxQ="><button class="quickbtn"><b class="name">burgers</b></a></li>
+                
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/IcecreamCorner.html"><img class ="type" src = "https://www.creativefabrica.com/wp-content/uploads/2019/12/18/Ice-cream-logo-design-Graphics-1.jpg"><button class="quickbtn"><b class="name">ice-cream</b></a></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/VegeFeast.html"><img class ="type" src = "https://image.freepik.com/free-vector/vegetable-logo-design-vector_18099-214.jpg"> <button class="quickbtn"><b class="name">vegetarian</b></a></li>
+
+                <li class = "typebarslot"></li>
+
+                <li class="quickie"><a href ="https://end-product.ttfeast.repl.co/DessertStorm.html"><img class = "type" src = "https://i.pinimg.com/736x/8f/c9/b9/8fc9b9ca9d52de68700013628405a33e.jpg"><button class="quickbtn"><b class="name">desert</b></a></li>
+
+                </ul>
+      </div>
+      <!--end of quicknav-->
+    <main>
+      <hr>
+      <div>
+        <h1 class = "slideheader">
+          Featured Resturants
+          </h1>
+        </div>
+      <div class="slideshow-container">
+					<!--Slideshow Container-->
+						<div class="mySlides fade">
+							<img src="Pictures/Pizza.png" style="width:100%"/>
+							<div class="text"><!--Pizza Hut--> </div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="Pictures/Burger.png" style="width:100%"/>
+							<div class="text"><!--Burger King--></div>
+						</div>
+							
+						<div class="mySlides fade">
+							<img src="Pictures/Kfc.png" style="width:100%"/>
+							<div class="text"><!--KFC--></div>
+						</div>
+						
+						<div class="mySlides fade">	
+							<img src="Pictures/Mc.png" style="width:100%"/>
+							<div class="text"><!--MCdonalds--></div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="Pictures/Tgi.png" style="width:100%"/>
+							<div class="text"><!--T.G.I.Friday--></div>
+						</div>
+						
+						<div class="mySlides fade">
+							<img src="Pictures/Rituals.jpg" style="width:100%"/>
+							<div class="text"><!--Rituals--></div>
+						</div>
+						
+						<div style="text-align:center">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+      </main>
+       <!--bottom table start-->
+      <ADS>
+        <section id = "Deals" >
+          <p>DEALS</p>
+
+          <a href="https://project.ttfeast.repl.co">
+        
+         <img alt="ttfeast" src="https://assets3.thrillist.com/v1/image/2867540/1454x970/crop;jpeg_quality=60.jpg"
+
+         width="80.00%" height="80.00%">
+      </a>
+
+        </section>
+
+        <section id = "Offers">
+
+          <p> Offers </p>
+         
+          <a href="https://project.ttfeast.repl.co">
+
+         <img alt="ttfeast" src="https://www.sizzlingpubs.co.uk/content/dam/sizzling-pubs/images/2021/50-off/suburban-2021-januarysale-offers-sb.jpg.asset/1609337586139.jpg"
+
+         width="80.00%" height="80.00%">
+      </a>
+
+        </section>
+
+        <section id = "Specials">
+         
+          <p> Specials </p>
+
+          <a href="https://project.ttfeast.repl.co">
+
+         <img alt="ttfeast" src="https://st3.depositphotos.com/1106005/15586/i/1600/depositphotos_155862012-stock-photo-todays-specials-sign.jpg"
+         width="80.00%" height="80.00%">
+      </a>
+      </section>
+
+      <section id= "fresh">
+
+        </section>
+
+    </ADS>
+    <!--bottom table end-->
+
+    <!--wholepage end-->
+    </div>
+  </body>
+  <<!--body end-->
+  <script src="script.js"></script>
+
+  <footer class="footer-distributed">
+
+			<div class="footer-left">
+				<h3>About<span>TTfeast</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© oh what our group team name is.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+868 864-8274(not a real number)</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@TTfeast.com">support@TTfeast.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					we strive to ensure that our customers will recieve their food without hassle and get their delicious meal.</p>
+			
+				</div>
+        <div class="footer-icons">
+					<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+					<a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-youtube"></i></a>
+				</div>
+	</footer>
+</html>
