@@ -1,0 +1,36 @@
+/*Sign-in*/
+.imgbk {
+  background-image: url("https://cdn.hipwallpaper.com/i/72/35/M3ilZL.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  .t3 {
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 10;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-collapse: separate;
+}
+#reg{
+  font-family: Helvetica;
+  text-align: center;
+ 
+}
+.registersign {
+    flex: 50%;
+    border-radius: 10px;
+    background-color: #F0F8FF;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/****************/
+.nav-wraper{
+  background-color: #2962ff;
+}
